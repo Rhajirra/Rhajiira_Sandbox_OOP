@@ -34,8 +34,13 @@ public class Main {
         h3.age = 45;
         h3.weight = 92;
 
-        double sum = h1.age + h2.age + h3.age;
+        Human h4 = new Human();
+        h4.name = "Lemmy";
+        h4.age = 72;
+        h4.weight = 85;
 
-        System.out.println(sum / 3);
+        double sum = h1.age + h2.age + h3.age + h4.age;
+
+        System.out.println(sum / 4);
     }
 }

@@ -10,10 +10,10 @@ public class Box
         return volume;
     }
 
-    void showVolume() //also using void without return
+    double showVolume() //also using void without return
     {
         double volume = getVolume();//length * width * height;
         System.out.println(volume);
-        //return volume;
+        return volume;
     }
 }

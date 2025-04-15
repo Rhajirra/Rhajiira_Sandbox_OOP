@@ -1,7 +1,29 @@
 public class Main {
     public static void main(String[] args)
     {
+        Box box1 = new Box(10,10,10);
+        box1.showVolume();
+//        box1.setDimens(10,10,10);
+        Box box2 = new Box(10,10,10);
+        box2.showVolume();
+//        box2.setDimens(20,20,20);
+//
+//        box1.showVolume();
+//        box2.showVolume();
+//
+        Peon peon = new Peon("Daniel", "Ingenier", 1000);
+        peon.PeonInfo();
 
+
+        Rectangle ret_rec = new Rectangle();
+        ret_rec.length = 10;
+        ret_rec.width = 10;
+        double area_ret_rec = ret_rec.ret_area();
+        System.out.println(area_ret_rec);
+
+        Rectangle par_ret_area = new Rectangle();
+        par_ret_area.par_ret_area(20,20);
+        System.out.println(par_ret_area.ret_area());
 
 //        Box box1 = new Box();
 //        double length = box1.length;
@@ -16,16 +38,16 @@ public class Main {
 //        box2.width = 20;
 //        box3.width = 0;
 //
-        Dog dog = new Dog();
-        dog.name = "Bob";
-        dog.type = "Unhoming";
-        dog.weight = 5;
-        dog.speed = 5;
-
-        String my_dog = dog.getInfo();
-        System.out.println(my_dog);
-        dog.run();
+//        Dog dog = new Dog();
+//        dog.name = "Bob";
+//        dog.type = "Unhoming";
+//        dog.weight = 5;
+//        dog.speed = 5;
 //
+//        String my_dog = dog.getInfo();
+//        System.out.println(my_dog);
+//        dog.run();
+////
 //        double volume = box1.getVolume();//box1.height * box1.length * box1.width;
 //        System.out.println(volume);
 //        box1.showVolume();
@@ -57,5 +79,8 @@ public class Main {
 //        double sum = h1.age + h2.age + h3.age + h4.age;
 //
 //        System.out.println(sum / 4);
+
+//        Test test = new Test();
+//        System.out.println(test.square(20));
     }
 }

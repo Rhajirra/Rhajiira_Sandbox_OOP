@@ -1,29 +1,51 @@
 public class Main {
     public static void main(String[] args)
     {
-        Box box1 = new Box(10,10,10);
-        box1.showVolume();
-//        box1.setDimens(10,10,10);
-        Box box2 = new Box(10,10,10);
-        box2.showVolume();
-//        box2.setDimens(20,20,20);
-//
+        Box current = new Box(10,10,10);
+        Box another = current.copy();
+        current.showVolume();
+        another.showVolume();
+
+        Box copyBox = new Box(current);
+
+        Box incBox = current.increase();
+        incBox.showVolume();
+
+
+
+//        current.compare(another);
+
+        int boxResult = current.intCompare(another);
+        System.out.println(boxResult);
+        current.intCompare(another);
+
+//        System.out.println(current.getVolume());
+//        System.out.println(another.getVolume());
+
+
+//        Box box1 = new Box(10,10,10);
 //        box1.showVolume();
+////        box1.setDimens(10,10,10);
+//        Box box2 = new Box(10,10,10);
 //        box2.showVolume();
+////        box2.setDimens(20,20,20);
+////
+////        box1.showVolume();
+////        box2.showVolume();
+////
+//        Peon peon = new Peon("Daniel", "Engenier", 1000);
+//        peon.PeonInfo();
 //
-        Peon peon = new Peon("Daniel", "Ingenier", 1000);
-        peon.PeonInfo();
-
-
-        Rectangle ret_rec = new Rectangle();
-        ret_rec.length = 10;
-        ret_rec.width = 10;
-        double area_ret_rec = ret_rec.ret_area();
-        System.out.println(area_ret_rec);
-
-        Rectangle par_ret_area = new Rectangle();
-        par_ret_area.par_ret_area(20,20);
-        System.out.println(par_ret_area.ret_area());
+//
+//        Rectangle ret_rec = new Rectangle();
+//        ret_rec.length = 10;
+//        ret_rec.width = 10;
+//        double area_ret_rec = ret_rec.ret_area();
+//        System.out.println(area_ret_rec);
+//
+//        Rectangle par_ret_area = new Rectangle();
+//        par_ret_area.par_ret_area(20,20);
+//        System.out.println(par_ret_area.ret_area());
 
 //        Box box1 = new Box();
 //        double length = box1.length;
